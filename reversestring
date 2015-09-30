@@ -1,0 +1,22 @@
+var newString = "";
+
+function reverse(inString) {
+
+    var stringLength = inString.length;
+    var leftc = 1,
+        rightc = 0,
+        cutoff;
+
+
+    for (var i = 0; i <= stringLength; i++) {
+        cutoff = inString.slice(stringLength - leftc, stringLength - rightc);
+        newString = newString.concat(cutoff);
+        leftc++;
+        rightc++;
+    }
+
+    return newString;
+}
+
+
+confirm(reverse("amy"));
