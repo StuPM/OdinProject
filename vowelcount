@@ -1,0 +1,31 @@
+var vowelNum = 0;
+
+function vowel_count(inString) {
+    for (var i = 0; i < inString.length; i++) {
+        var checkthis = inString.charAt(i);
+
+        switch (checkthis) {
+            case "A":
+                vowelNum++;
+                break;
+            case "E":
+                vowelNum++;
+                break;
+            case "I":
+                vowelNum++;
+                break;
+            case "O":
+                vowelNum++;
+                break;
+            case "U":
+                vowelNum++;
+                break;
+            case "Y":
+                vowelNum++;
+                break;
+        }
+    }
+    return vowelNum;
+}
+
+confirm(vowel_count("AAAA"));
