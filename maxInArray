@@ -1,0 +1,14 @@
+var numArray = [1,5,2,888,42,643,-1];
+
+function my_max(inArray){
+    var maxNum = inArray[0];
+    
+    for(var x in inArray){
+        if(inArray[x] > maxNum){
+            maxNum = inArray[x];
+        }
+    }
+    return maxNum;    
+}
+
+confirm(my_max(numArray));
